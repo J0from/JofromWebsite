@@ -99,6 +99,11 @@ export default function RootLayout({
             initApollo();
           `}
         </Script>
+        <Script
+          src="https://brand.jofrom.io/js/external-tracking.js"
+          data-tracking-id="tk_d578a68c1f514adcb5c4007bd9541703"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
