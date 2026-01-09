@@ -7,7 +7,7 @@ export function StructuredData() {
     url: "https://www.jofrom.io",
     logo: "https://www.jofrom.io/favicon.png",
     description:
-      "AI-powered digital employees for regulated industries. We help businesses strike the right balance between Human + Machine.",
+      "Digital employees for regulated industries. We help businesses strike the right balance between Human + Machine.",
     sameAs: [
       // Add your social media profiles here when available
     ],
@@ -33,7 +33,7 @@ export function StructuredData() {
     name: "Jo: Human + Machine",
     url: "https://www.jofrom.io",
     description:
-      "We help businesses strike the right balance between Human + Machine. AI workforce automation for regulated industries.",
+      "We help businesses strike the right balance between Human + Machine. Workforce solutions for regulated industries.",
     publisher: {
       "@type": "Organization",
       name: "Jo",
@@ -70,13 +70,13 @@ export function StructuredData() {
     },
     operatingSystem: "Web",
     description:
-      "AI workforce automation for highly regulated industries including healthcare, manufacturing, energy, and food processing.",
+      "Workforce solutions for highly regulated industries including healthcare, manufacturing, energy, and food processing.",
     featureList: [
       "HIPAA Compliance",
       "FDA Ready",
       "NERC CIP Certified",
       "Labor Bottleneck Solutions",
-      "Automated Compliance",
+      "Compliance Solutions",
       "Digital Employees",
     ],
     aggregateRating: {
@@ -89,7 +89,7 @@ export function StructuredData() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    serviceType: "AI Workforce Automation",
+    serviceType: "Workforce Solutions",
     provider: {
       "@type": "Organization",
       name: "Jo",
@@ -100,20 +100,20 @@ export function StructuredData() {
     },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "AI Workforce Services",
+      name: "Workforce Services",
       itemListElement: [
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Healthcare Compliance Automation",
+            name: "Healthcare Compliance Solutions",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Manufacturing Workforce Automation",
+            name: "Manufacturing Workforce Solutions",
           },
         },
         {
@@ -127,7 +127,7 @@ export function StructuredData() {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Food Processing Automation",
+            name: "Food Processing Solutions",
           },
         },
       ],

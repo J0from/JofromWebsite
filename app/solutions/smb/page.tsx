@@ -2,23 +2,23 @@ import SMBPageClient from "./client"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Jo: Affordable AI Office Staff for Small Business | $25/month per Department",
+  title: "Jo: Affordable Office Staff for Small Business | $25/month per Department",
   description:
-    "Digital staffing for small businesses. Get AI-powered support for Finance, HR, Accounting, IT, Marketing, Sales, and Operations. No code required. Starting at $25/month.",
+    "Digital staffing for small businesses. Get support for Finance, HR, Accounting, IT, Marketing, Sales, and Operations. No code required. Starting at $25/month.",
   keywords: [
-    "small business AI",
-    "affordable AI employees",
+    "small business solutions",
+    "affordable digital employees",
     "digital staffing",
-    "AI for small business",
-    "small business automation",
-    "AI bookkeeping",
-    "AI marketing assistant",
-    "AI sales assistant",
+    "small business solutions",
+    "small business tools",
+    "bookkeeping solutions",
+    "marketing assistant",
+    "sales assistant",
     "small business software",
-    "business automation tools",
+    "business tools",
   ],
   openGraph: {
-    title: "Jo: Affordable AI Office Staff for Small Business",
+    title: "Jo: Affordable Office Staff for Small Business",
     description:
       "Digital staffing for Finance, HR, Accounting, IT, Marketing, Sales, and Operations. Starting at $25/month.",
     type: "website",

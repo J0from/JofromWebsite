@@ -2,25 +2,24 @@ import type { Metadata } from "next"
 import { HomePageClient } from "./HomePageClient"
 
 export const metadata: Metadata = {
-  title: "Jo: AI Workforce Automation for Regulated Industries | Labor Shortage Solutions",
+  title: "Jo: Human + Machine | Labor Shortage Solutions for Regulated Industries",
   description:
-    "Fix labor bottlenecks in highly regulated industries with AI-powered digital employees. Stay compliant, cut costs, and automate repetitive tasks in healthcare, manufacturing, energy, and food processing.",
+    "Fix labor bottlenecks in highly regulated industries with digital employees. Stay compliant, cut costs, and handle repetitive tasks in healthcare, manufacturing, energy, and food processing.",
   keywords: [
-    "AI workforce automation",
+    "human machine balance",
     "labor shortage solutions",
-    "compliance automation",
-    "AI for regulated industries",
+    "compliance solutions",
+    "regulated industries",
     "digital employees",
-    "healthcare automation",
-    "manufacturing automation",
-    "AI compliance tools",
+    "healthcare solutions",
+    "manufacturing solutions",
+    "compliance tools",
     "workforce management",
     "labor cost reduction",
   ],
   openGraph: {
-    title: "Jo: AI Workforce Automation for Regulated Industries",
-    description:
-      "Fix labor bottlenecks with AI-powered digital employees. Stay compliant, cut costs, and get the work done.",
+    title: "Jo: Human + Machine for Regulated Industries",
+    description: "Fix labor bottlenecks with digital employees. Stay compliant, cut costs, and get the work done.",
     type: "website",
     url: "https://www.jofrom.io",
     siteName: "Jo",
@@ -35,9 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jo: AI Workforce Automation for Regulated Industries",
-    description:
-      "Fix labor bottlenecks with AI-powered digital employees. Stay compliant, cut costs, and get the work done.",
+    title: "Jo: Human + Machine for Regulated Industries",
+    description: "Fix labor bottlenecks with digital employees. Stay compliant, cut costs, and get the work done.",
     images: ["/og-image.png"],
   },
   alternates: {

@@ -212,8 +212,8 @@ export default function AgentSelectionPage() {
       <div className="py-8 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">Pick Priority Agents</h1>
-            <p className="text-gray-600">Select the departments you want to automate first</p>
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">Pick Priority Solutions</h1>
+            <p className="text-gray-600">Select the departments you want to enhance first</p>
           </div>
 
           {/* Agent Cards - 2x5 Grid */}

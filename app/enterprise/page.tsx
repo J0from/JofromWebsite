@@ -2,25 +2,25 @@ import type { Metadata } from "next"
 import EnterpriseClientPage from "./client"
 
 export const metadata: Metadata = {
-  title: "Enterprise AI Workforce Solutions | HIPAA, FDA, NERC Compliant Automation | Jo",
+  title: "Enterprise Workforce Solutions | HIPAA, FDA, NERC Compliant | Jo",
   description:
-    "Enterprise-grade AI workforce automation for healthcare, energy, manufacturing, and food processing. HIPAA compliant, FDA ready, NERC CIP certified. Reduce labor costs while maintaining compliance.",
+    "Enterprise-grade workforce solutions for healthcare, energy, manufacturing, and food processing. HIPAA compliant, FDA ready, NERC CIP certified. Reduce labor costs while maintaining compliance.",
   keywords: [
-    "enterprise AI automation",
-    "HIPAA compliant AI",
-    "FDA compliant automation",
+    "enterprise solutions",
+    "HIPAA compliant",
+    "FDA compliant solutions",
     "NERC CIP compliance",
-    "healthcare workforce automation",
-    "energy sector automation",
-    "manufacturing AI solutions",
-    "food processing automation",
+    "healthcare workforce solutions",
+    "energy sector solutions",
+    "manufacturing solutions",
+    "food processing solutions",
     "enterprise compliance tools",
-    "regulated industry AI",
+    "regulated industry solutions",
   ],
   openGraph: {
-    title: "Enterprise AI Workforce Solutions for Regulated Industries",
+    title: "Enterprise Workforce Solutions for Regulated Industries",
     description:
-      "HIPAA, FDA, and NERC compliant AI automation for enterprise organizations. 99.9% uptime SLA and 24/7 support.",
+      "HIPAA, FDA, and NERC compliant solutions for enterprise organizations. 99.9% uptime SLA and 24/7 support.",
     type: "website",
     url: "https://www.jofrom.io/enterprise",
   },

@@ -9,16 +9,16 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Jo: Human + Machine | AI Workforce Automation for Regulated Industries",
+  title: "Human + Machine",
   description:
-    "We help businesses strike the right balance between Human + Machine. AI-powered digital employees for healthcare, manufacturing, energy, and food processing. Stay compliant, cut costs, reduce labor bottlenecks.",
+    "We help businesses strike the right balance between Human + Machine. Digital employees for healthcare, manufacturing, energy, and food processing. Stay compliant, cut costs, reduce labor bottlenecks.",
   keywords: [
-    "AI workforce automation",
     "human machine balance",
     "digital employees",
-    "compliance automation",
+    "compliance solutions",
     "labor shortage solutions",
-    "regulated industries AI",
+    "regulated industries",
+    "workforce solutions",
   ],
   icons: {
     icon: "/favicon.png",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   generator: "v0.app",
   openGraph: {
-    title: "Jo: Human + Machine | AI Workforce Automation",
+    title: "Human + Machine",
     description:
       "We help businesses strike the right balance between Human + Machine. Fix labor bottlenecks in regulated industries.",
     type: "website",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jo: Human + Machine | AI Workforce Automation",
+    title: "Human + Machine",
     description:
       "We help businesses strike the right balance between Human + Machine. Fix labor bottlenecks in regulated industries.",
   },

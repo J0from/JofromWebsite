@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight, ClipboardCheck, Microscope, Lock } from "lucide-react"
+import { ClipboardCheck, Microscope, Lock } from "lucide-react"
 import Link from "next/link"
 
 export function RegulatedIndustriesSection() {
@@ -95,16 +95,14 @@ export function RegulatedIndustriesSection() {
           ))}
         </div>
 
-        {/* CTA */}
         <div className="text-center mt-20">
           <Button
             asChild
+            variant="gradient"
+            size="lg"
             className="bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:opacity-90 text-lg px-8 h-12"
           >
-            <Link href="/enterprise/whitepaper">
-              Download Compliance Whitepaper
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Link>
+            <Link href="/enterprise/whitepaper">Download Whitepaper</Link>
           </Button>
         </div>
       </div>

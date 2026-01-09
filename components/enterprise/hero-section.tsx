@@ -30,8 +30,8 @@ export function EnterpriseHeroSection() {
 
             <Button
               asChild
-              size="lg"
               variant="outline"
+              size="lg"
               className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-6 h-auto"
             >
               <Link href="/enterprise/whitepaper">Download Whitepaper</Link>
