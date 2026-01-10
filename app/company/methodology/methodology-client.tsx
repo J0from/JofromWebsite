@@ -599,7 +599,7 @@ export function MethodologyPageClient() {
             Graduated Autonomy Framework
           </h2>
           <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
-            Match Jo's autonomy to risk level—never give blanket freedom
+            Match Jo's autonomy to risk level—calibrated freedom, not blanket access
           </p>
 
           <div className="space-y-4">
@@ -611,7 +611,7 @@ export function MethodologyPageClient() {
                       <span className="inline-block bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full">
                         Critical Risk
                       </span>
-                      <span className="text-2xl font-bold text-gray-900">0% Autonomous</span>
+                      <span className="text-2xl font-bold text-gray-900">Strict Logic</span>
                     </div>
                     <p className="text-gray-700 mb-1">Regulatory compliance, safety, legal liability</p>
                     <p className="text-sm text-gray-600">
