@@ -6,7 +6,7 @@ import Link from "next/link"
 export function EnergyCards() {
   const energyUnits = [
     {
-      name: "Jo from Infrastructure",
+      name: "Jo from Assets",
       role: "Quality",
       icon: Wrench,
       features: [
@@ -18,7 +18,7 @@ export function EnergyCards() {
       ],
     },
     {
-      name: "Jo from Isolation",
+      name: "Jo from Lockout",
       role: "Safety",
       icon: HardHat,
       features: [
@@ -30,7 +30,7 @@ export function EnergyCards() {
       ],
     },
     {
-      name: "Jo from Manifest",
+      name: "Jo from Regulatory",
       role: "Compliance",
       icon: FileCheck,
       features: [

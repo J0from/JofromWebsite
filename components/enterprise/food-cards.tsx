@@ -18,7 +18,7 @@ export function FoodCards() {
       ],
     },
     {
-      name: "Jo from Traffic",
+      name: "Jo from Safety",
       role: "Safety",
       icon: ShieldAlert,
       features: [

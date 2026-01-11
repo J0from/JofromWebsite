@@ -6,7 +6,7 @@ import Link from "next/link"
 export function RegulatedIndustriesSection() {
   const healthcareUnits = [
     {
-      name: "Jo from Assembly",
+      name: "Jo from Quality",
       role: "Quality",
       icon: ClipboardCheck,
       features: [
@@ -18,7 +18,7 @@ export function RegulatedIndustriesSection() {
       ],
     },
     {
-      name: "Jo from Bio-Safety",
+      name: "Jo from Safety",
       role: "Safety",
       icon: Microscope,
       features: [
@@ -30,7 +30,7 @@ export function RegulatedIndustriesSection() {
       ],
     },
     {
-      name: "Jo from Custody",
+      name: "Jo from Compliance",
       role: "Compliance",
       icon: Lock,
       features: [
