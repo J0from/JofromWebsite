@@ -121,7 +121,7 @@ export function MethodologyPageClient() {
       subtitle: "How work gets done",
       description:
         "Contains execution units with role decomposition, enabling human/Jo allocation and hybrid workflows.",
-      badge: "Jo can help HERE",
+      badge: "Jo",
       badgeColor: "bg-green-600",
       borderColor: "border-green-600",
       bgGradient: "from-green-50 to-blue-50",
@@ -370,9 +370,7 @@ export function MethodologyPageClient() {
       {/* Role Decomposition */}
       <section className="py-16 sm:py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-gray-900">
-            Role Decomposition
-          </h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-gray-900">Role Decomposition</h2>
           <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
             Every outcome follows a universal execution pattern that enables precise task allocation
           </p>
