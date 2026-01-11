@@ -83,13 +83,63 @@ export function MethodologyPageClient() {
     { icon: Target, text: "Cross-functional impact analysis" },
   ]
 
+  const layers = [
+    {
+      num: 1,
+      title: "Organization",
+      subtitle: "What the company does",
+      description: "Defines operating boundaries, scale classification, regulatory constraints, and risk thresholds.",
+      badge: "Logic",
+      badgeColor: "bg-slate-900",
+      borderColor: "border-blue-600",
+      bgGradient: "from-blue-50 to-purple-50",
+      numBg: "bg-blue-600",
+    },
+    {
+      num: 2,
+      title: "Strata",
+      subtitle: "3D labor framework",
+      description:
+        "Maps authority (vertical), function (horizontal), and breadth/depth (scalar) to structural positions.",
+      badge: "Logic",
+      badgeColor: "bg-slate-900",
+      borderColor: "border-purple-600",
+      bgGradient: "from-purple-50 to-blue-50",
+      numBg: "bg-purple-600",
+    },
+    {
+      num: 3,
+      title: "Role",
+      subtitle: "Outcomes to deliver",
+      description:
+        "Establishes outcome ownership, accountability boundaries, human requirements, and non-transferable duties.",
+      badge: "STAYS HUMAN",
+      badgeColor: "bg-gradient-to-r from-blue-600 to-purple-600",
+      borderColor: "border-blue-600",
+      bgGradient: "from-blue-50 to-purple-50",
+      numBg: "bg-gradient-to-r from-blue-600 to-purple-600",
+    },
+    {
+      num: 4,
+      title: "Task",
+      subtitle: "How work gets done",
+      description:
+        "Contains execution units with 8-phase decomposition, enabling human/Jo allocation and hybrid workflows.",
+      badge: "Jo can help HERE",
+      badgeColor: "bg-green-600",
+      borderColor: "border-green-600",
+      bgGradient: "from-green-50 to-blue-50",
+      numBg: "bg-green-600",
+    },
+  ]
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-indigo-600 animate-pulse opacity-50"></div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 drop-shadow-lg">
             LABOR MAP<sup className="text-2xl">™</sup>
           </h1>
           <p className="text-xl sm:text-2xl text-white/90 mb-4">Precision Labor Engineering for Regulated Operations</p>
@@ -110,32 +160,29 @@ export function MethodologyPageClient() {
             Where constrained labor supply meets high stakes and regulatory oversight
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="border-2 hover:border-blue-200 transition-all hover:shadow-xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-red-100 to-transparent rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
-              <CardContent className="p-8 relative z-10">
-                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
-                  <Users className="w-6 h-6 text-red-600" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 sm:p-8">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <Users className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">Constrained Labor Supply</h3>
                 <p className="text-gray-600">Not enough people to do all the work that needs to be done.</p>
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-blue-200 transition-all hover:shadow-xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-orange-100 to-transparent rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
-              <CardContent className="p-8 relative z-10">
-                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
-                  <Shield className="w-6 h-6 text-orange-600" />
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 sm:p-8">
+                <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                  <Shield className="w-6 h-6 text-blue-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">High Cost of Failure</h3>
                 <p className="text-gray-600">Mistakes create significant financial, legal, or safety consequences.</p>
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-blue-200 transition-all hover:shadow-xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-transparent rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
-              <CardContent className="p-8 relative z-10">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 sm:p-8">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                   <FileCheck className="w-6 h-6 text-blue-600" />
                 </div>
@@ -162,14 +209,10 @@ export function MethodologyPageClient() {
             The system is governed by invariants that ensure compliance, accountability, and explainability
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             {principles.map((principle, index) => (
-              <Card
-                key={index}
-                className="border-2 hover:border-blue-200 transition-all hover:shadow-xl relative overflow-hidden"
-              >
-                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
-                <CardContent className="p-8 relative z-10">
+              <Card key={index} className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6 sm:p-8">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
                       <principle.icon className="w-6 h-6 text-white" />
@@ -201,186 +244,37 @@ export function MethodologyPageClient() {
             Each layer constrains the layer below — ensuring compliance flows from top to bottom
           </p>
 
-          {/* Desktop: 2x2 Grid */}
-          <div className="hidden md:grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {/* Layer 1: Organization */}
-            <Card className="border-4 border-blue-600 bg-gradient-to-br from-blue-50 to-blue-100 relative overflow-hidden">
-              <div className="absolute top-4 left-4 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                1
-              </div>
-              <CardContent className="p-8 pt-20">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Organization</h3>
-                <p className="text-gray-700 font-semibold mb-3">What the company does</p>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• Operating boundaries</li>
-                  <li>• Scale classification</li>
-                  <li>• Regulatory constraints</li>
-                  <li>• Risk thresholds</li>
-                </ul>
-                <div className="mt-4 pt-4 border-t-2 border-blue-300">
-                  <span className="inline-block px-3 py-1 bg-red-600 text-white text-sm font-medium rounded-full">
-                    Logic
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-4xl mx-auto">
+            {layers.map((layer) => (
+              <Card
+                key={layer.num}
+                className={`border-2 ${layer.borderColor} bg-gradient-to-br ${layer.bgGradient} hover:shadow-lg transition-shadow`}
+              >
+                <CardContent className="p-4 sm:p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div
+                      className={`w-10 h-10 ${layer.numBg} rounded-full flex items-center justify-center text-white font-bold`}
+                    >
+                      {layer.num}
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-gray-900">{layer.title}</h3>
+                      <p className="text-sm text-gray-700">{layer.subtitle}</p>
+                    </div>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-3">{layer.description}</p>
+                  <span
+                    className={`inline-block px-3 py-1 ${layer.badgeColor} text-white text-sm font-medium rounded-full`}
+                  >
+                    {layer.badge}
                   </span>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Layer 2: Strata */}
-            <Card className="border-4 border-purple-600 bg-gradient-to-br from-purple-50 to-purple-100 relative overflow-hidden">
-              <div className="absolute top-4 left-4 w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                2
-              </div>
-              <CardContent className="p-8 pt-20">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Strata</h3>
-                <p className="text-gray-700 font-semibold mb-3">3D labor framework</p>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• Vertical: Authority</li>
-                  <li>• Horizontal: Function</li>
-                  <li>• Scalar: Breadth/Depth</li>
-                  <li>• Structural positions</li>
-                </ul>
-                <div className="mt-4 pt-4 border-t-2 border-purple-300">
-                  <span className="inline-block px-3 py-1 bg-orange-600 text-white text-sm font-medium rounded-full">
-                    Logic
-                  </span>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Layer 3: Role */}
-            <Card className="border-4 border-indigo-600 bg-gradient-to-br from-indigo-50 to-indigo-100 relative overflow-hidden">
-              <div className="absolute top-4 left-4 w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                3
-              </div>
-              <CardContent className="p-8 pt-20">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Role</h3>
-                <p className="text-gray-700 font-semibold mb-3">Outcomes to deliver</p>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• Outcome ownership</li>
-                  <li>• Accountability boundaries</li>
-                  <li>• Human requirements</li>
-                  <li>• Non-transferable duties</li>
-                </ul>
-                <div className="mt-4 pt-4 border-t-2 border-indigo-300">
-                  <span className="inline-block px-3 py-1 bg-yellow-600 text-white text-sm font-medium rounded-full">
-                    STAYS HUMAN
-                  </span>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Layer 4: Task */}
-            <Card className="border-4 border-green-600 bg-gradient-to-br from-green-50 to-green-100 relative overflow-hidden">
-              <div className="absolute top-4 left-4 w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
-                4
-              </div>
-              <CardContent className="p-8 pt-20">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Task</h3>
-                <p className="text-gray-700 font-semibold mb-3">How work gets done</p>
-                <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• Execution units</li>
-                  <li>• 8-phase decomposition</li>
-                  <li>• Human/Jo allocation</li>
-                  <li>• Hybrid workflows</li>
-                </ul>
-                <div className="mt-4 pt-4 border-t-2 border-green-300">
-                  <span className="inline-block px-3 py-1 bg-green-600 text-white text-sm font-medium rounded-full">
-                    Jo can help HERE
-                  </span>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Mobile: Stacked */}
-          <div className="md:hidden space-y-4">
-            <Card className="border-4 border-blue-600 bg-gradient-to-br from-blue-50 to-blue-100">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">
-                    1
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900">Organization</h3>
-                    <p className="text-sm text-gray-700">What the company does</p>
-                  </div>
-                </div>
-                <span className="inline-block px-3 py-1 bg-red-600 text-white text-sm font-medium rounded-full mb-2">
-                  Logic
-                </span>
-                <p className="text-sm text-gray-600">Operating boundaries, scale, constraints</p>
-              </CardContent>
-            </Card>
-
-            <div className="flex justify-center">
-              <ArrowRight className="w-6 h-6 text-gray-400 rotate-90" />
-            </div>
-
-            <Card className="border-4 border-purple-600 bg-gradient-to-br from-purple-50 to-purple-100">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold">
-                    2
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900">Strata</h3>
-                    <p className="text-sm text-gray-700">3D labor framework</p>
-                  </div>
-                </div>
-                <span className="inline-block px-3 py-1 bg-orange-600 text-white text-sm font-medium rounded-full mb-2">
-                  Logic
-                </span>
-                <p className="text-sm text-gray-600">Authority, function, breadth/depth</p>
-              </CardContent>
-            </Card>
-
-            <div className="flex justify-center">
-              <ArrowRight className="w-6 h-6 text-gray-400 rotate-90" />
-            </div>
-
-            <Card className="border-4 border-indigo-600 bg-gradient-to-br from-indigo-50 to-indigo-100">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold">
-                    3
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900">Role</h3>
-                    <p className="text-sm text-gray-700">Outcomes to deliver</p>
-                  </div>
-                </div>
-                <span className="inline-block px-3 py-1 bg-yellow-600 text-white text-sm font-medium rounded-full mb-2">
-                  STAYS HUMAN
-                </span>
-                <p className="text-sm text-gray-600">Accountability and ownership</p>
-              </CardContent>
-            </Card>
-
-            <div className="flex justify-center">
-              <ArrowRight className="w-6 h-6 text-gray-400 rotate-90" />
-            </div>
-
-            <Card className="border-4 border-green-600 bg-gradient-to-br from-green-50 to-green-100">
-              <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">
-                    4
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900">Task</h3>
-                    <p className="text-sm text-gray-700">How work gets done</p>
-                  </div>
-                </div>
-                <span className="inline-block px-3 py-1 bg-green-600 text-white text-sm font-medium rounded-full mb-2">
-                  Jo can help HERE
-                </span>
-                <p className="text-sm text-gray-600">Execution and allocation</p>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            ))}
           </div>
 
           {/* Key Insight */}
-          <Card className="mt-8 border-2 border-blue-600 bg-gradient-to-r from-blue-600 to-purple-600">
+          <Card className="mt-8 border-2 border-blue-600 bg-gradient-to-r from-blue-600 to-purple-600 max-w-4xl mx-auto">
             <CardContent className="p-6 text-center text-white">
               <p className="text-xl font-bold mb-2">The Key to Compliance</p>
               <p className="text-lg">
@@ -406,11 +300,10 @@ export function MethodologyPageClient() {
             Fast Insight, Practical Plans, Real Operational Change
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {/* Discovery */}
-            <Card className="border-2 hover:border-blue-200 transition-all hover:shadow-xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-blue-100 to-transparent rounded-bl-full"></div>
-              <CardContent className="p-8 relative">
+            <Card className="border-2 hover:border-blue-600 transition-all hover:shadow-lg">
+              <CardContent className="p-6 sm:p-8">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center">
                     <Search className="h-6 w-6 text-white" />
@@ -429,9 +322,8 @@ export function MethodologyPageClient() {
             </Card>
 
             {/* Design */}
-            <Card className="border-2 hover:border-purple-200 transition-all hover:shadow-xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-purple-100 to-transparent rounded-bl-full"></div>
-              <CardContent className="p-8 relative">
+            <Card className="border-2 hover:border-purple-600 transition-all hover:shadow-lg">
+              <CardContent className="p-6 sm:p-8">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center">
                     <Layers className="h-6 w-6 text-white" />
@@ -450,9 +342,8 @@ export function MethodologyPageClient() {
             </Card>
 
             {/* Deploy */}
-            <Card className="border-2 hover:border-green-200 transition-all hover:shadow-xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-green-100 to-transparent rounded-bl-full"></div>
-              <CardContent className="p-8 relative">
+            <Card className="border-2 hover:border-green-600 transition-all hover:shadow-lg">
+              <CardContent className="p-6 sm:p-8">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center">
                     <Rocket className="h-6 w-6 text-white" />
@@ -490,24 +381,25 @@ export function MethodologyPageClient() {
             Every outcome follows a universal execution pattern that enables precise task allocation
           </p>
 
-          <Card className="border-2 p-8 mb-8">
-            <CardContent className="p-0">
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <Card className="mb-8 hover:shadow-lg transition-shadow">
+            <CardContent className="p-4 sm:p-8">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
                 {phases.map((phase, index) => (
-                  <div key={index} className="relative">
-                    <div className="bg-gradient-to-br from-blue-50 to-purple-50 border-2 border-blue-600 rounded-lg p-4 text-center">
-                      <div className="text-sm font-bold text-blue-600 mb-1">{index + 1}</div>
-                      <div className="text-base font-semibold text-gray-900">{phase}</div>
-                    </div>
+                  <div
+                    key={index}
+                    className="bg-gradient-to-br from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-3 sm:p-4 text-center"
+                  >
+                    <div className="text-sm font-bold text-blue-600 mb-1">{index + 1}</div>
+                    <div className="text-sm sm:text-base font-semibold text-gray-900">{phase}</div>
                   </div>
                 ))}
               </div>
             </CardContent>
           </Card>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="border-2 hover:border-green-200 transition-all hover:shadow-xl">
-              <CardContent className="p-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 sm:p-8 text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">
                   H
                 </div>
@@ -516,8 +408,8 @@ export function MethodologyPageClient() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-blue-200 transition-all hover:shadow-xl">
-              <CardContent className="p-8 text-center">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 sm:p-8 text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">
                   M
                 </div>
@@ -526,8 +418,8 @@ export function MethodologyPageClient() {
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-purple-200 transition-all hover:shadow-xl">
-              <CardContent className="p-8 text-center">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 sm:p-8 text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-sm">
                   H+M
                 </div>
@@ -555,10 +447,9 @@ export function MethodologyPageClient() {
           </p>
 
           {/* The Paradox - Two cards side by side */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
-              <CardContent className="p-8 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 sm:p-8">
                 <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
                   <Zap className="h-6 w-6 text-blue-600" />
                 </div>
@@ -570,9 +461,8 @@ export function MethodologyPageClient() {
               </CardContent>
             </Card>
 
-            <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
-              <CardContent className="p-8 relative z-10">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 sm:p-8">
                 <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
                   <Lock className="h-6 w-6 text-blue-600" />
                 </div>
@@ -587,11 +477,10 @@ export function MethodologyPageClient() {
 
           {/* The Governance Dilemma */}
           <h3 className="text-2xl font-bold text-center mb-8 text-gray-900">The Governance Dilemma</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
-              <CardContent className="p-8 relative z-10">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-2xl mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 sm:p-8">
+                <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl mb-4">
                   1
                 </div>
                 <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
@@ -602,10 +491,9 @@ export function MethodologyPageClient() {
               </CardContent>
             </Card>
 
-            <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
-              <CardContent className="p-8 relative z-10">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-2xl mb-6">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 sm:p-8">
+                <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl mb-4">
                   2
                 </div>
                 <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
@@ -616,10 +504,9 @@ export function MethodologyPageClient() {
               </CardContent>
             </Card>
 
-            <Card className="relative overflow-hidden border-2 border-blue-600 hover:shadow-xl transition-all">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
-              <CardContent className="p-8 relative z-10">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-2xl mb-6">
+            <Card className="border-2 border-blue-600 hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 sm:p-8">
+                <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl mb-4">
                   ?
                 </div>
                 <div className="h-12 w-12 rounded-lg bg-blue-100 flex items-center justify-center mb-4">
@@ -632,17 +519,16 @@ export function MethodologyPageClient() {
           </div>
 
           {/* How Labor Map Solves This */}
-          <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-16 translate-x-16 opacity-50"></div>
-            <CardContent className="p-8 relative z-10">
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardContent className="p-6 sm:p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">How Labor Map Solves This</h3>
               <p className="text-lg text-gray-600 text-center mb-8 max-w-2xl mx-auto">
                 Labor Map's Safety Architecture ensures ownership stays with humans while execution can be delegated
               </p>
 
-              <div className="space-y-4 max-w-2xl mx-auto mb-8">
-                <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+              <div className="space-y-3 max-w-2xl mx-auto mb-8">
+                <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
+                  <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 text-sm">
                     1
                   </div>
                   <div className="flex-1">
@@ -650,15 +536,11 @@ export function MethodologyPageClient() {
                     <span className="text-gray-600 mx-2">—</span>
                     <span className="text-gray-600">Hard constraints</span>
                   </div>
-                  <span className="px-3 py-1 bg-blue-600 text-white text-sm font-medium rounded-full">Logic</span>
+                  <span className="px-3 py-1 bg-slate-900 text-white text-sm font-medium rounded-full">Logic</span>
                 </div>
 
-                <div className="flex justify-center">
-                  <ArrowRight className="w-5 h-5 text-gray-400 rotate-90" />
-                </div>
-
-                <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
+                  <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 text-sm">
                     2
                   </div>
                   <div className="flex-1">
@@ -666,15 +548,11 @@ export function MethodologyPageClient() {
                     <span className="text-gray-600 mx-2">—</span>
                     <span className="text-gray-600">Structure</span>
                   </div>
-                  <span className="px-3 py-1 bg-blue-600 text-white text-sm font-medium rounded-full">Logic</span>
+                  <span className="px-3 py-1 bg-slate-900 text-white text-sm font-medium rounded-full">Logic</span>
                 </div>
 
-                <div className="flex justify-center">
-                  <ArrowRight className="w-5 h-5 text-gray-400 rotate-90" />
-                </div>
-
-                <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg border">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg">
+                  <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 text-sm">
                     3
                   </div>
                   <div className="flex-1">
@@ -682,17 +560,13 @@ export function MethodologyPageClient() {
                     <span className="text-gray-600 mx-2">—</span>
                     <span className="text-gray-600">Accountability</span>
                   </div>
-                  <span className="px-3 py-1 bg-green-600 text-white text-sm font-medium rounded-full">
+                  <span className="px-3 py-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm font-medium rounded-full">
                     STAYS HUMAN
                   </span>
                 </div>
 
-                <div className="flex justify-center">
-                  <ArrowRight className="w-5 h-5 text-gray-400 rotate-90" />
-                </div>
-
                 <div className="flex items-center gap-4 p-4 bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg border-2 border-blue-600">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                  <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0 text-sm">
                     4
                   </div>
                   <div className="flex-1">
@@ -700,13 +574,13 @@ export function MethodologyPageClient() {
                     <span className="text-gray-600 mx-2">—</span>
                     <span className="text-gray-600">Execution</span>
                   </div>
-                  <span className="px-3 py-1 bg-purple-600 text-white text-sm font-medium rounded-full">
+                  <span className="px-3 py-1 bg-green-600 text-white text-sm font-medium rounded-full">
                     Jo can help HERE
                   </span>
                 </div>
               </div>
 
-              <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg border">
+              <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg">
                 <p className="text-xl font-bold text-gray-900">"Execution can move; ownership does not."</p>
               </div>
             </CardContent>
@@ -731,22 +605,21 @@ export function MethodologyPageClient() {
             Match Jo's autonomy to risk level — calibrated freedom, not blanket access
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
             {/* Critical Risk */}
-            <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
-              <CardContent className="p-8 relative z-10">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 sm:p-8">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Lock className="h-8 w-8 text-white" />
+                  <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Lock className="h-7 w-7 text-white" />
                   </div>
                   <div>
                     <span className="text-sm font-medium text-blue-600 uppercase tracking-wide">Critical Risk</span>
-                    <h3 className="text-2xl font-bold text-gray-900">Strict Logic</h3>
+                    <h3 className="text-xl font-bold text-gray-900">Strict Logic</h3>
                   </div>
                 </div>
                 <p className="text-gray-600 mb-4">Regulatory compliance, safety, legal liability</p>
-                <div className="p-4 bg-gray-50 rounded-lg border">
+                <div className="p-4 bg-gray-50 rounded-lg">
                   <p className="text-sm text-gray-700">
                     <strong>Jo role:</strong> Observer only — LOG and ALERT humans
                   </p>
@@ -755,20 +628,19 @@ export function MethodologyPageClient() {
             </Card>
 
             {/* High Risk */}
-            <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
-              <CardContent className="p-8 relative z-10">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 sm:p-8">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Shield className="h-8 w-8 text-white" />
+                  <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Shield className="h-7 w-7 text-white" />
                   </div>
                   <div>
                     <span className="text-sm font-medium text-blue-600 uppercase tracking-wide">High Risk</span>
-                    <h3 className="text-2xl font-bold text-gray-900">10-20% Autonomous</h3>
+                    <h3 className="text-xl font-bold text-gray-900">10-20% Autonomous</h3>
                   </div>
                 </div>
                 <p className="text-gray-600 mb-4">Quality control, approvals, financial decisions</p>
-                <div className="p-4 bg-gray-50 rounded-lg border">
+                <div className="p-4 bg-gray-50 rounded-lg">
                   <p className="text-sm text-gray-700">
                     <strong>Jo role:</strong> Recommend — human reviews and approves
                   </p>
@@ -777,20 +649,19 @@ export function MethodologyPageClient() {
             </Card>
 
             {/* Medium Risk */}
-            <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
-              <CardContent className="p-8 relative z-10">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 sm:p-8">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
-                    <BarChart3 className="h-8 w-8 text-white" />
+                  <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <BarChart3 className="h-7 w-7 text-white" />
                   </div>
                   <div>
                     <span className="text-sm font-medium text-blue-600 uppercase tracking-wide">Medium Risk</span>
-                    <h3 className="text-2xl font-bold text-gray-900">50-70% Autonomous</h3>
+                    <h3 className="text-xl font-bold text-gray-900">50-70% Autonomous</h3>
                   </div>
                 </div>
                 <p className="text-gray-600 mb-4">Data processing, reporting, routine operations</p>
-                <div className="p-4 bg-gray-50 rounded-lg border">
+                <div className="p-4 bg-gray-50 rounded-lg">
                   <p className="text-sm text-gray-700">
                     <strong>Jo role:</strong> Execute — human spot-checks and monitors
                   </p>
@@ -799,20 +670,19 @@ export function MethodologyPageClient() {
             </Card>
 
             {/* Low Risk */}
-            <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
-              <CardContent className="p-8 relative z-10">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6 sm:p-8">
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Check className="h-8 w-8 text-white" />
+                  <div className="w-14 h-14 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Check className="h-7 w-7 text-white" />
                   </div>
                   <div>
                     <span className="text-sm font-medium text-blue-600 uppercase tracking-wide">Low Risk</span>
-                    <h3 className="text-2xl font-bold text-gray-900">90% Autonomous</h3>
+                    <h3 className="text-xl font-bold text-gray-900">90% Autonomous</h3>
                   </div>
                 </div>
                 <p className="text-gray-600 mb-4">Scheduling, notifications, data logging</p>
-                <div className="p-4 bg-gray-50 rounded-lg border">
+                <div className="p-4 bg-gray-50 rounded-lg">
                   <p className="text-sm text-gray-700">
                     <strong>Jo role:</strong> Handle it — human reviews logs periodically
                   </p>
@@ -822,93 +692,61 @@ export function MethodologyPageClient() {
           </div>
 
           {/* Real Example */}
-          <Card className="relative overflow-hidden border-2 hover:border-blue-200 transition-all hover:shadow-xl">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-16 translate-x-16 opacity-50"></div>
-            <CardContent className="p-8 relative z-10">
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardContent className="p-6 sm:p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-2 text-center">Real Example: Food Processing Plant</h3>
               <p className="text-gray-600 text-center mb-8">
                 Mission: "Ensure product safety and quality for Batch #1247"
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="p-6 bg-gray-50 rounded-lg border">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                <div className="p-4 sm:p-6 bg-gray-50 rounded-lg">
                   <h4 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
                     <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
                       <Lock className="w-4 h-4 text-white" />
                     </div>
                     Zero Autonomy
                   </h4>
-                  <ul className="space-y-2 text-sm text-gray-700">
-                    <li className="flex items-start gap-2">
-                      <ArrowRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Final batch approval → Human (FDA)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <ArrowRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Allergen declaration → Human (liability)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <ArrowRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Safety override → Human (OSHA)</span>
-                    </li>
-                  </ul>
+                  <p className="text-sm text-gray-700">
+                    Final batch approval (FDA), allergen declaration (liability), and safety override (OSHA) remain with
+                    humans.
+                  </p>
                 </div>
 
-                <div className="p-6 bg-gray-50 rounded-lg border">
+                <div className="p-4 sm:p-6 bg-gray-50 rounded-lg">
                   <h4 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
                     <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
                       <Shield className="w-4 h-4 text-white" />
                     </div>
                     Low Autonomy
                   </h4>
-                  <ul className="space-y-2 text-sm text-gray-700">
-                    <li className="flex items-start gap-2">
-                      <ArrowRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Quality analysis → Jo analyzes, human approves</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <ArrowRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Deviation investigation → Jo gathers, human decides</span>
-                    </li>
-                  </ul>
+                  <p className="text-sm text-gray-700">
+                    Jo analyzes quality data and gathers deviation information, but humans approve and decide.
+                  </p>
                 </div>
 
-                <div className="p-6 bg-gray-50 rounded-lg border">
+                <div className="p-4 sm:p-6 bg-gray-50 rounded-lg">
                   <h4 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
                     <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
                       <BarChart3 className="w-4 h-4 text-white" />
                     </div>
                     Medium Autonomy
                   </h4>
-                  <ul className="space-y-2 text-sm text-gray-700">
-                    <li className="flex items-start gap-2">
-                      <ArrowRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Temperature monitoring → Jo adjusts within range</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <ArrowRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Inventory reordering → Jo orders if below threshold</span>
-                    </li>
-                  </ul>
+                  <p className="text-sm text-gray-700">
+                    Jo adjusts temperature within range and orders inventory when below threshold.
+                  </p>
                 </div>
 
-                <div className="p-6 bg-gray-50 rounded-lg border">
+                <div className="p-4 sm:p-6 bg-gray-50 rounded-lg">
                   <h4 className="font-bold text-gray-900 mb-4 flex items-center gap-2">
                     <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center">
                       <Check className="w-4 h-4 text-white" />
                     </div>
                     High Autonomy
                   </h4>
-                  <ul className="space-y-2 text-sm text-gray-700">
-                    <li className="flex items-start gap-2">
-                      <ArrowRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Data logging → Jo handles completely</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <ArrowRight className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                      <span>Report generation → Jo creates, human reviews periodically</span>
-                    </li>
-                  </ul>
+                  <p className="text-sm text-gray-700">
+                    Jo handles data logging completely and creates reports for periodic human review.
+                  </p>
                 </div>
               </div>
             </CardContent>
@@ -931,14 +769,10 @@ export function MethodologyPageClient() {
             Labor Map produces a complete blueprint for human-machine collaboration
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {outputs.map((output, index) => (
-              <Card
-                key={index}
-                className="border-2 hover:border-blue-200 transition-all hover:shadow-xl relative overflow-hidden"
-              >
-                <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full -translate-y-10 translate-x-10 opacity-50"></div>
-                <CardContent className="p-6 relative z-10">
+              <Card key={index} className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
                       <output.icon className="w-5 h-5 text-white" />
