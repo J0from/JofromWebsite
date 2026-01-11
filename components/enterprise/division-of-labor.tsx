@@ -48,7 +48,7 @@ export function DivisionOfLaborSection() {
               <div className="h-14 w-14 rounded-lg bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center mb-6 shadow-md">
                 <Zap className="h-7 w-7 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Jo Performs...</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Jo Performs</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-purple-600 mt-0.5 flex-shrink-0" />
