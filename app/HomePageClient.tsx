@@ -312,7 +312,7 @@ export function HomePageClient() {
       {/* NEW SECTION: Bottlenecks (BG Black, Left Aligned) */}
       <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-black">
         <div className="text-right px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
-          <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white leading-tight space-y-1 text-balance">
+          <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-bold leading-tight space-y-1 text-balance">
             <div>
               Jo fixes{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
