@@ -295,7 +295,7 @@ export default function SMBPageClient() {
             Meet Jo
           </h1>
           <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 opacity-90 drop-shadow-md">
-            Your Office Dream Team
+            Your Machine Dream Team
           </h2>
           <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 opacity-95 max-w-3xl mx-auto leading-relaxed drop-shadow-sm px-4">
             We are a Machine Staffing Firm.
