@@ -24,7 +24,7 @@ import { ParticleBackground } from "@/components/particle-background"
 export const metadata: Metadata = {
   title: "Jo | Small Business Solutions - Your Office Dream Team",
   description:
-    "Meet Jo - The AI-powered office dream team for small businesses. 5x faster, save 60 hours monthly, zero code required.",
+    "Meet Jo - The 'Machine Dream Team' for small businesses. 5x faster, save 60 hours monthly, zero code required.",
 }
 
 export default function SmallBusinessPage() {
@@ -125,14 +125,14 @@ export default function SmallBusinessPage() {
     {
       title: "Solopreneur",
       description: "Just you, building your vision",
-      features: ["1-2 Jo agents", "Core operations", "Email support"],
+      features: ["1-2 Jo's", "Core operations", "Email support"],
       price: "$25/mo",
       highlighted: false,
     },
     {
       title: "Small Team",
       description: "Growing with 5-20 employees",
-      features: ["Up to 5 Jo agents", "Advanced automation", "Priority support", "Custom workflows"],
+      features: ["Up to 5 Jo's", "Advanced automation", "Priority support", "Custom workflows"],
       price: "$125/mo",
       highlighted: true,
       badge: "Most Popular",
@@ -140,7 +140,7 @@ export default function SmallBusinessPage() {
     {
       title: "Growing Business",
       description: "Scaling to 50+ employees",
-      features: ["Unlimited Jo agents", "Enterprise features", "Dedicated success manager", "API access"],
+      features: ["Unlimited Jo's", "Enterprise features", "Dedicated success manager", "API access"],
       price: "Custom",
       highlighted: false,
     },
@@ -291,7 +291,7 @@ export default function SmallBusinessPage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Choose Your Starting Point</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Scale as you grow - add or remove Jo agents anytime
+              Scale as you grow - add or remove Jo's anytime
             </p>
           </div>
 
@@ -318,7 +318,7 @@ export default function SmallBusinessPage() {
 
                   <div className="text-center mb-6">
                     <div className="text-4xl font-bold text-foreground">{size.price}</div>
-                    {size.price !== "Custom" && <p className="text-sm text-muted-foreground mt-1">per agent</p>}
+                    {size.price !== "Custom" && <p className="text-sm text-muted-foreground mt-1">per Jo</p>}
                   </div>
 
                   <ul className="space-y-3 mb-8">
