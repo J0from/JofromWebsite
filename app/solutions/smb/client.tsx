@@ -298,8 +298,7 @@ export default function SMBPageClient() {
             Your Office Dream Team
           </h2>
           <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 opacity-95 max-w-3xl mx-auto leading-relaxed drop-shadow-sm px-4">
-            We are a digital staffing firms that handles marketing, sales, ops, and bookkeeping—so you can focus on
-            growth.
+            We are a Machine Staffing Firm.
           </p>
           <Button variant="destructive" size="hero" asChild>
             <Link href="/solutions/smb/purchase">
