@@ -8,8 +8,8 @@ export function IntegrationsSection() {
     { name: "Aptean", industry: "Food & Beverage", logo: "/logos/aptean.svg", url: "https://www.aptean.com/" },
     { name: "NetSuite", industry: "Food & Beverage", logo: "/logos/netsuite.png", url: "https://www.netsuite.com/portal/home.shtml" },
     { name: "Infor CloudSuite F&B", industry: "Food & Beverage", popular: true, logo: "/logos/infor.svg", url: "https://www.infor.com/industries/food-beverage" },
-    { name: "BatchMaster", industry: "Food & Beverage", logo: "/logos/batchmaster.svg", url: "https://www.batchmaster.com/" },
-    { name: "Wolters Kluwer", industry: "Food & Beverage", url: "https://www.wolterskluwer.com/" },
+    { name: "BatchMaster", industry: "Food & Beverage", logo: "/logos/batchmaster.png", url: "https://www.batchmaster.com/" },
+    { name: "Wolters Kluwer", industry: "Food & Beverage", logo: "/logos/wolters-kluwer.svg", url: "https://www.wolterskluwer.com/" },
     // Healthcare & Life Sciences - popular in position 6 (2nd column)
     { name: "Epic / Cerner", industry: "Healthcare & Life Sciences", popular: true },
     { name: "Infor Cloverleaf", industry: "Healthcare & Life Sciences" },
