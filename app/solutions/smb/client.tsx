@@ -800,9 +800,9 @@ export default function SMBPageClient() {
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg sm:text-xl mb-4 sm:mb-6">
                   1
                 </div>
-                <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Connect Your Tools</h3>
+                <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Activate a Jo</h3>
                 <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                  One-click integrations with Gmail, QuickBooks, HubSpot, Slack, and 50+ apps.
+                  Choose a template or describe what you need. Setup takes seconds.
                 </p>
               </CardContent>
             </Card>
@@ -812,9 +812,9 @@ export default function SMBPageClient() {
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg sm:text-xl mb-4 sm:mb-6">
                   2
                 </div>
-                <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Activate a Jo</h3>
+                <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Connect Your Tools</h3>
                 <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                  Choose a template or describe what you need. Setup takes seconds.
+                  One-click integrations with Gmail, QuickBooks, HubSpot, Slack, and 50+ apps.
                 </p>
               </CardContent>
             </Card>
