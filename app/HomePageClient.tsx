@@ -334,19 +334,19 @@ export function HomePageClient() {
               </span>
             </div>
             <div>
-              -{" "}
+              {"\u2014"}{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
                 highly regulated
               </span>
               ,{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-                thin margin
+                thin-margin industries
               </span>
-              , and{" "}
+              {" "}{"\u2014"} where the jobs are{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
                 essential
               </span>
-              {" "}jobs.
+              .
             </div>
           </div>
         </div>
