@@ -37,17 +37,10 @@ export function Footer() {
                 <Link href="/solutions/consulting" className="text-slate-400 hover:text-white transition-colors">
                   Staffing
                 </Link>
-                <ul className="mt-2 ml-3 space-y-2">
-                  <li>
-                    <Link href="/solutions/consulting/fractional" className="text-slate-400 hover:text-white transition-colors">
-                      Hire Talent
-                    </Link>
-                  </li>
-                </ul>
               </li>
               <li>
-                <Link href="/hire" className="text-slate-400 hover:text-white transition-colors">
-                  Hire
+                <Link href="/solutions/consulting/fractional" className="text-slate-400 hover:text-white transition-colors">
+                  Hire Talent
                 </Link>
               </li>
             </ul>
