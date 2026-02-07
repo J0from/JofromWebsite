@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Linkedin, Instagram } from "lucide-react"
+import { Linkedin, Instagram, Mail } from "lucide-react"
 import { Logo } from "@/components/logo"
 
 export function Footer() {
@@ -121,7 +121,9 @@ export function Footer() {
                 <Link
                   href="/company/contact"
                   className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors group"
+                  aria-label="Contact Us"
                 >
+                  <Mail className="w-5 h-5 group-hover:text-blue-300 transition-colors" />
                   <span className="text-sm">Contact Us</span>
                 </Link>
               </li>
