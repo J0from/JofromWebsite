@@ -4,7 +4,7 @@ import { HomePageClient } from "./HomePageClient"
 export const metadata: Metadata = {
   title: "Human + Machine | Jo from",
   description:
-    "Jo from is a Staffing Firm. We place people and machines to fix labor bottlenecks in Healthcare, Energy, and Manufacturing—the blue-collar jobs that are the foundation of our country.",
+    "We staff Human + Machines to fix labor bottlenecks in Healthcare, Energy, and Manufacturing \u2014 highly regulated, thin-margin industries \u2014 where the jobs are essential.",
   keywords: [
     "human machine balance",
     "staffing firm",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Jo from | Human + Machine Staffing",
-    description: "We place people and machines to fix labor bottlenecks in Healthcare, Energy, and Manufacturing.",
+    description: "We staff Human + Machines to fix labor bottlenecks in Healthcare, Energy, and Manufacturing \u2014 highly regulated, thin-margin industries \u2014 where the jobs are essential.",
     type: "website",
     url: "https://www.jofrom.io",
     siteName: "Jo from",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Jo from | Human + Machine Staffing",
-    description: "We place people and machines to fix labor bottlenecks in Healthcare, Energy, and Manufacturing.",
+    description: "We staff Human + Machines to fix labor bottlenecks in Healthcare, Energy, and Manufacturing \u2014 highly regulated, thin-margin industries \u2014 where the jobs are essential.",
     images: ["/og-image.png"],
   },
   alternates: {

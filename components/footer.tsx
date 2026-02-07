@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Linkedin, Instagram } from "lucide-react"
+import { Linkedin, Instagram, Mail } from "lucide-react"
 import { Logo } from "@/components/logo"
 
 export function Footer() {
@@ -36,6 +36,11 @@ export function Footer() {
                   Staffing
                 </Link>
               </li>
+              <li>
+                <Link href="/solutions/consulting/fractional" className="text-slate-400 hover:text-white transition-colors">
+                  Hire Talent
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -54,8 +59,13 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/company/contact" className="text-slate-400 hover:text-white transition-colors">
-                  Contact
+                <Link href="/company/jofrom" className="text-slate-400 hover:text-white transition-colors">
+                  The Tech
+                </Link>
+              </li>
+              <li>
+                <Link href="/resources/strategy-document" className="text-slate-400 hover:text-white transition-colors">
+                  Resources
                 </Link>
               </li>
             </ul>
@@ -105,6 +115,16 @@ export function Footer() {
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                   </svg>
                   <span className="text-sm">Twitter</span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/company/contact"
+                  className="flex items-center gap-2 text-slate-400 hover:text-white transition-colors group"
+                  aria-label="Contact Us"
+                >
+                  <Mail className="w-5 h-5 group-hover:text-blue-300 transition-colors" />
+                  <span className="text-sm">Contact Us</span>
                 </Link>
               </li>
             </ul>

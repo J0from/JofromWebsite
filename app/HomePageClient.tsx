@@ -332,12 +332,19 @@ export function HomePageClient() {
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
                 Manufacturing
               </span>
-              —
             </div>
             <div>
-              the blue-collar jobs that are the{" "}
+              {"\u2014"}{" "}
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
-                foundation of our society
+                highly regulated
+              </span>
+              ,{" "}
+              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
+                thin-margin industries
+              </span>
+              {" "}{"\u2014"} where the jobs are{" "}
+              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-bold">
+                essential
               </span>
               .
             </div>
