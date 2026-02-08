@@ -6,19 +6,8 @@ export function Footer() {
   return (
     <footer className="bg-black text-slate-300 py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        {/* Brand Section */}
-        <div className="mb-10">
-          <Link href="/" className="text-xl font-bold text-white flex items-center gap-0 mb-2">
-            <Logo width={22} height={22} className="text-white [&>span]:text-white" />
-            <span>from</span>
-          </Link>
-          <p className="text-sm text-slate-400">
-            <strong>Human + Machine</strong> staffing.
-          </p>
-        </div>
-
-        {/* Link Columns — equal thirds */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 items-start">
+        {/* Links + Brand Row */}
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 items-start">
           {/* Solutions */}
           <div>
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Solutions</h3>
@@ -76,6 +65,7 @@ export function Footer() {
           {/* Connect */}
           <div>
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Connect</h3>
+
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
@@ -130,6 +120,17 @@ export function Footer() {
                 </Link>
               </li>
             </ul>
+          </div>
+
+          {/* Brand Section */}
+          <div className="sm:text-right">
+            <Link href="/" className="text-xl font-bold text-white inline-flex items-center gap-0 mb-2">
+              <Logo width={16} height={16} className="text-white [&>span]:text-white" />
+              <span>from</span>
+            </Link>
+            <p className="text-sm text-slate-400">
+              <strong>Human + Machine</strong> staffing.
+            </p>
           </div>
         </div>
 
