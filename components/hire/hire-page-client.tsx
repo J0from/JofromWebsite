@@ -198,7 +198,7 @@ export function HirePageClient() {
               className="text-slate-600 group-hover:-translate-x-1 transition-transform"
             />
             <span className="text-xl sm:text-2xl">
-              <Logo size="lg" />
+              <Logo width={20} height={20} />
             </span>
           </Link>
         </div>
