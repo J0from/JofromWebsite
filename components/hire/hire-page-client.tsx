@@ -40,7 +40,7 @@ const jobCategories = [
     subtitle: "Sector 01",
     description:
       "Deploy skilled engineers and technical specialists for infrastructure, software systems, and advanced technology projects.",
-    image: "/images/hire-engineering.jpg",
+    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80",
     icon: Cpu,
     roles: [
       "Systems Engineers",
@@ -59,7 +59,7 @@ const jobCategories = [
     subtitle: "Sector 02",
     description:
       "Certified healthcare professionals for hospitals, clinics, and field medical operations across all specialties.",
-    image: "/images/hire-healthcare.jpg",
+    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&q=80",
     icon: Stethoscope,
     roles: [
       "Travel Nurses",
@@ -78,7 +78,7 @@ const jobCategories = [
     subtitle: "Sector 03",
     description:
       "Experienced production operators and manufacturing specialists for high-output, compliance-driven environments.",
-    image: "/images/hire-production.jpg",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
     icon: Factory,
     roles: [
       "Production Supervisors",
@@ -97,7 +97,7 @@ const jobCategories = [
     subtitle: "Sector 04",
     description:
       "Certified field workers for energy infrastructure, utilities, and large-scale field deployment projects.",
-    image: "/images/hire-energy.jpg",
+    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80",
     icon: Zap,
     roles: [
       "Lineworkers",
@@ -223,8 +223,8 @@ export function HirePageClient() {
       <section className="relative min-h-[80vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/hire-hero.jpg"
-            alt="Workers in the field"
+            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80"
+            alt="Industrial workers collaborating on site"
             fill
             className="object-cover"
             priority
