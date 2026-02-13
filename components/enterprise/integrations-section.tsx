@@ -37,7 +37,7 @@ export function IntegrationsSection() {
           <p className="text-lg text-gray-500">Connect with the tools your team already uses</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
           {integrations.map((integration) => {
             const CardWrapper = integration.url ? 'a' : 'div'
             const cardProps = integration.url ? { href: integration.url, target: "_blank", rel: "noopener noreferrer" } : {}
@@ -47,26 +47,23 @@ export function IntegrationsSection() {
                 <Card
                   className="border hover:shadow-lg transition-all hover:border-blue-300 relative group h-full bg-white"
                 >
-                  <CardContent className="p-6 flex flex-col items-center text-center">
+                  <CardContent className="p-5 flex flex-col items-center justify-center">
                     {integration.popular && (
-                      <Badge className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0 text-xs px-3 py-1 whitespace-nowrap">
-                        MOST POPULAR
+                      <Badge className="absolute -top-2.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 to-purple-600 text-white border-0 text-[10px] px-2 py-0.5 whitespace-nowrap">
+                        POPULAR
                       </Badge>
                     )}
-                    <div className="w-44 h-24 mb-4 relative rounded-xl bg-gradient-to-br from-slate-50 to-white flex items-center justify-center p-4 group-hover:from-blue-50 group-hover:to-indigo-50 transition-all border border-slate-200 group-hover:border-blue-200">
+                    <div className="w-full h-12 flex items-center justify-center mb-2">
                       <Image
                         src={integration.logo}
                         alt={`${integration.name} logo`}
-                        width={192}
-                        height={128}
-                        className="object-contain max-w-full max-h-full"
+                        width={160}
+                        height={48}
+                        className="object-contain max-h-full grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
                         style={{ width: 'auto', height: 'auto', maxWidth: '100%', maxHeight: '100%' }}
                       />
                     </div>
-                    <h4 className="font-semibold text-gray-900 text-base leading-tight group-hover:text-blue-600 transition-colors mb-1">
-                      {integration.name}
-                    </h4>
-                    <p className="text-sm text-gray-400">{integration.industry}</p>
+                    <span className="text-xs text-gray-400 group-hover:text-blue-500 transition-colors">{integration.industry}</span>
                   </CardContent>
                 </Card>
               </CardWrapper>
