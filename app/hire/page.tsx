@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description:
       "Deploy skilled contract workers for engineering, healthcare, production, and energy operations.",
     type: "website",
-    url: "https://www.jofrom.io/hire",
+    url: "https://jolandingpage.vercel.app/hire",
     siteName: "Jo from",
   },
   twitter: {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       "Deploy skilled contract workers for engineering, healthcare, production, and energy operations.",
   },
   alternates: {
-    canonical: "https://www.jofrom.io/hire",
+    canonical: "https://jolandingpage.vercel.app/hire",
   },
 }
 

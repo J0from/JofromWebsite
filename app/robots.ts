@@ -45,6 +45,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://jofrom.io/sitemap.xml",
+    sitemap: "https://jolandingpage.vercel.app/sitemap.xml",
   }
 }

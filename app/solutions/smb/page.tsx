@@ -22,10 +22,10 @@ export const metadata: Metadata = {
     description:
       "Digital staffing for Finance, HR, Accounting, IT, Marketing, Sales, and Operations. Starting at $25/month.",
     type: "website",
-    url: "https://www.jofrom.io/solutions/smb",
+    url: "https://jolandingpage.vercel.app/solutions/smb",
   },
   alternates: {
-    canonical: "https://www.jofrom.io/solutions/smb",
+    canonical: "https://jolandingpage.vercel.app/solutions/smb",
   },
 }
 

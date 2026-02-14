@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://jofrom.io"
+  const baseUrl = "https://jolandingpage.vercel.app"
 
   return [
     {

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     title: "Jo from — The Technology Behind the Platform",
     description:
       "Explore the architecture, AI models, and engineering principles powering Jo's digital coworkers for healthcare, energy, and manufacturing.",
-    url: "https://jofrom.io/company/jofrom",
+    url: "https://jolandingpage.vercel.app/company/jofrom",
     type: "website",
   },
 }

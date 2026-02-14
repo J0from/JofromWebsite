@@ -4,8 +4,8 @@ export function StructuredData() {
     "@type": "Organization",
     name: "Jo",
     alternateName: "Jo from",
-    url: "https://www.jofrom.io",
-    logo: "https://www.jofrom.io/favicon.png",
+    url: "https://jolandingpage.vercel.app",
+    logo: "https://jolandingpage.vercel.app/favicon.png",
     description:
       "Digital employees for regulated industries. We help businesses strike the right balance between Human + Machine.",
     sameAs: [
@@ -31,7 +31,7 @@ export function StructuredData() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Jo: Human + Machine",
-    url: "https://www.jofrom.io",
+    url: "https://jolandingpage.vercel.app",
     description:
       "We help businesses strike the right balance between Human + Machine. Workforce solutions for regulated industries.",
     publisher: {
@@ -39,14 +39,14 @@ export function StructuredData() {
       name: "Jo",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.jofrom.io/favicon.png",
+        url: "https://jolandingpage.vercel.app/favicon.png",
       },
     },
     potentialAction: {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: "https://www.jofrom.io/search?q={search_term_string}",
+        urlTemplate: "https://jolandingpage.vercel.app/search?q={search_term_string}",
       },
       "query-input": "required name=search_term_string",
     },

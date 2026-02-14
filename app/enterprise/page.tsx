@@ -22,10 +22,10 @@ export const metadata: Metadata = {
     description:
       "HIPAA, FDA, and NERC compliant solutions for enterprise organizations. 99.9% uptime SLA and 24/7 support.",
     type: "website",
-    url: "https://www.jofrom.io/enterprise",
+    url: "https://jolandingpage.vercel.app/enterprise",
   },
   alternates: {
-    canonical: "https://www.jofrom.io/enterprise",
+    canonical: "https://jolandingpage.vercel.app/enterprise",
   },
 }
 
