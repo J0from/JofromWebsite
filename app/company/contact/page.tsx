@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact Jo | Get in Touch with Our Team",
     description: "Contact Jo for enterprise AI workforce automation solutions. Located in Atlanta, GA.",
-    url: "https://jolandingpage.vercel.app/company/contact",
+    url: "https://www.jofrom.io/company/contact",
     type: "website",
   },
 }

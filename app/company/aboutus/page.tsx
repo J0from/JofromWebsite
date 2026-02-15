@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "About Jo | Human + Machine Balance",
     description:
       "Learn about Jo's mission to redefine the future of work through intelligent digital coworkers and our proprietary framework.",
-    url: "https://jolandingpage.vercel.app/company/aboutus",
+    url: "https://www.jofrom.io/company/aboutus",
     type: "website",
   },
 }

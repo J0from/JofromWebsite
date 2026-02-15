@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Solutions for Every Business | Jo: Human + Machine",
     description:
       "Discover Jo's intelligent automation solutions for SMBs, enterprises, and consultants. Choose the right digital workforce for your business size and industry needs.",
-    url: "https://jolandingpage.vercel.app/solutions",
+    url: "https://www.jofrom.io/solutions",
     siteName: "Jo: Human + Machine",
     type: "website",
   },

@@ -6,7 +6,7 @@ import { StructuredData } from "@/components/structured-data"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jolandingpage.vercel.app"),
+  metadataBase: new URL("https://www.jofrom.io"),
   title: "Human + Machine | Jo from",
   description:
     "We staff Human + Machines to fix labor bottlenecks in Healthcare, Energy, and Manufacturing \u2014 highly regulated, thin-margin industries \u2014 where the jobs are essential.",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description:
       "We staff Human + Machines to fix labor bottlenecks in Healthcare, Energy, and Manufacturing \u2014 highly regulated, thin-margin industries \u2014 where the jobs are essential.",
     type: "website",
-    url: "https://jolandingpage.vercel.app",
+    url: "https://www.jofrom.io",
     siteName: "Jo from",
     locale: "en_US",
   },

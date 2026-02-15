@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "Jo from | Human + Machine Staffing",
     description: "We staff Human + Machines to fix labor bottlenecks in Healthcare, Energy, and Manufacturing \u2014 highly regulated, thin-margin industries \u2014 where the jobs are essential.",
     type: "website",
-    url: "https://jolandingpage.vercel.app",
+    url: "https://www.jofrom.io",
     siteName: "Jo from",
     images: [
       {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   alternates: {
-    canonical: "https://jolandingpage.vercel.app",
+    canonical: "https://www.jofrom.io",
   },
 }
 
