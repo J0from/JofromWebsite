@@ -55,7 +55,7 @@ export function Logo({ size, width, height, className, withGradient = true }: Lo
           />
         )}
       </div>
-      <span className="font-bold text-slate-900">o from</span>
+      <span className="font-bold text-slate-900"> from</span>
     </span>
   )
 }

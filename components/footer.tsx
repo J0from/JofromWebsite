@@ -126,7 +126,6 @@ export function Footer() {
           <div className="sm:text-right">
             <Link href="/" className="text-xl font-bold text-white inline-flex items-center gap-0 mb-2">
               <Logo width={16} height={16} className="text-white [&>span]:text-white" />
-              <span>from</span>
             </Link>
             <p className="text-sm text-slate-400">
               <strong>Human + Machine</strong> staffing.
@@ -136,7 +135,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-slate-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-slate-400">© 2026 J0 from Corp. All rights reserved.</p>
+          <p className="text-sm text-slate-400">© 2026 Jo from Corp. All rights reserved.</p>
           <div className="flex flex-wrap justify-center gap-6">
             <Link href="/privacy" className="text-sm text-slate-400 hover:text-white transition-colors">
               Privacy
