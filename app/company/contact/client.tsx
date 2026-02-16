@@ -204,8 +204,6 @@ export default function ContactClientPage() {
                       <h3 className="font-semibold text-slate-900 mb-1">Location</h3>
                       <p className="text-sm sm:text-base text-slate-600">
                         Atlanta, GA
-                        <br />
-                        United States
                       </p>
                     </div>
                   </div>
